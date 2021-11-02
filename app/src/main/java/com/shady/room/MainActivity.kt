@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.shady.room.database.WordsApplication
 import com.shady.room.database.Word
-import com.shady.room.database.WordViewModel
-import com.shady.room.database.WordViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 

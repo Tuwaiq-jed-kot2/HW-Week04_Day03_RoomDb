@@ -1,6 +1,8 @@
-package com.shady.room.database
+package com.shady.room
 
 import androidx.lifecycle.*
+import com.shady.room.database.Word
+import com.shady.room.database.WordRepository
 import kotlinx.coroutines.launch
 
 class WordViewModel(private val repository: WordRepository) : ViewModel() {
