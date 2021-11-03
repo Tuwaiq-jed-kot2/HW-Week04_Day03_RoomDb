@@ -8,5 +8,5 @@ import androidx.room.PrimaryKey
 @Entity(tableName="home_table")
 data class Home(
     //?
-    @PrimaryKey(autoGenrate = true) val id :Int,
+    @PrimaryKey(autoGenrate = true) val id: String,
     @ColumnInfo(name="Home") val home:String)

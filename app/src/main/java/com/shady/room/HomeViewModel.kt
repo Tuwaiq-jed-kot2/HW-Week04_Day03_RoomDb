@@ -1,9 +1,8 @@
 package com.shady.room
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.*
 import com.shady.room.Database.HomeRepostry
+import kotlinx.coroutines.launch
 
 
 class HomeViewModel(private val repository: HomeRepostry) : ViewModel() {
@@ -11,8 +10,8 @@ class HomeViewModel(private val repository: HomeRepostry) : ViewModel() {
 
     val allWords: LiveData<List<Home>> = repository.allHoms.asLiveData()
 
-    fun insert(home: Home) = viwModleScope.launch {
-        repository.insert(Home())
+    fun insert(home: Home) = viewModelScope.launch {
+        repository.insert(home)
     }
 }
 

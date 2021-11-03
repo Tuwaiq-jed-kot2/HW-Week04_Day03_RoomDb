@@ -14,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
         val adapter = HomeListAdapter()
-        recyclerView.adapter = Adapter
+        recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
     }
     private val wordViewModel: HomeViewModel by ViewModel {
-        HomeViewModelFactory((application as homsApplication ).repository)
+        HomeViewModelFactory((application as NweApp.homsApplication ).repository)
     }
 }
