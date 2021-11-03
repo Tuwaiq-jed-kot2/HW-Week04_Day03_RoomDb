@@ -1,5 +1,3 @@
-
-
 package com.shady.room
 
 import androidx.lifecycle.LiveData
@@ -9,18 +7,12 @@ import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
-/**
- * View Model to keep a reference to the word repository and
- * an up-to-date list of all words.
- */
 
 class WordViewModel(private val repository: WordRepository) : ViewModel() {
 
     val allWords: LiveData<List<Word>> = repository.allWords.asLiveData()
 
-    /**
-     * Launching a new coroutine to insert the data in a non-blocking way
-     */
+
     fun insert(word: Word) = viewModelScope.launch {
         repository.insert(word)
     }
