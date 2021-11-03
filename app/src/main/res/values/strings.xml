@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Room</string>
+    <string name="app_name">Room.FAISAL Homework</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_word">But Any Word Here…</string>
+    <string name="button_save">Save this word please</string>
+    <string name="empty_not_saved">do you think am dumb to save empty.</string>
+    <string name="add_word">Add word that deserve to be here</string>
 </resources>
